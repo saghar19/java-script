@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+<head><link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="57x57" href="favicon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="favicon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="favicon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="favicon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="favicon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="favicon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="favicon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="favicon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="favicon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="favicon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+<link rel="manifest" href="favicon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">  
+
+<link rel="stylesheet" type="text/css" href="css/style.css">
+	<title>Exercise</title>
+</head>
+<body>
+
+	<h1>Function 1</h1>
+	<p>click the button to demonestrate the prompt box.</p>
+	<button onclick="myfunction1()">Try it</button>
+	<p id="insert"></p>
+	<br><hr>
+
+
+
+	<h1>function 2</h1>
+	<ul>
+		<li>Bread</li>
+		<li>Cookies</li>
+	</ul>
+	<p>Click the button to change the tex of the first list item (index0)</p>
+
+		<button onclick="myFunction()">Try it</button>
+
+		<p>Click the button to change the tex of the second list item (index1)</p>
+
+		<button onclick="myFunction1()">Try it</button>	
+		<br>
+		<hr>
+
+
+		<h1>function 3</h1>
+		<div id="change">
+		<p class="child">A P element with class="child" in a div.</p><p class="child">Another P element with class="child" in a div.</p>
+		<p>A P element in div with a span element with class="child"inside of it.</p>
+		</div>
+
+		<p>Click the button to add a background color to all elements with class="child" inside the div element with id="change"</p>
+		 <button id="changeColor();">Try it </button>
+		 <p><strong>Note:</strong>The getElementByClassName()method is not supported in Internet Explorer 8 and earlier version</p>
+		 <br>
+		 <hr>
+
+
+
+
+
+		 <h1>function 4</h1>
+		 <button onclick="insert"> All Gone</button>
+		 <br><hr>
+
+
+		 <h1>function 5</h1>
+		 <p>Enter your name:</p>
+		 <input type="text" id="fname" onblur="toUp()">
+		 <p>When you leave the input field, a function is triggered which transforms the input text to upper case.</p>
+		 <br><hr>
+
+
+
+
+		 <h1>function 6</h1>
+		 <p>Select a new car from the list.</p>
+		 <select id="mySelect" onchange="onChange()">
+		 	<option value="Audi">Audi
+		    <option value="BMW">BMW
+		    <option value="Mercedes">Mercedes
+		    <option value="Volvo">Volvo	
+		 </select>
+		 <p>When you select a new car,a function is triggered which output the value of the selected car.</p>
+		 <p id="changed"></p>
+		 <br><hr> 
+
+		 <h1>function 7</h1>
+		 <img src="image" onerror="error()">
+		 <br>
+		 <hr>
+
+
+		 <h1>function 8</h1>
+		 <input type="text" onfocus="toYellow(this)">
+		 <p>When the input field gets focous, a function is triggered which changes the background-color.</p>
+		 <br>
+		 <hr>
+
+
+
+		 <h1>function 9</h1>
+		 <p>A function is triggered when the user is pressing a key in the input field</p> 
+		 <input type="text" onkeydown="keyDown()">
+		 <br>
+		 <hr>
+
+
+		 <h1>function 10</h1>
+		 <p id="myP" onmousedown="mouseDown()" onmouseup="mouseUp()">
+		 	Click the text! The mouseDown() function is triggered when the mouse button is pressed down over this paragraph, and sets the color of the text to red. The mouseUp() function is triggered when the mouse button is released, and sets the color of the text to green.  
+		 </p>
+		 <br>
+		 <hr>
+
+
+
+
+
+<script src="js/main.js" ></script>
+</body>
+</html>
